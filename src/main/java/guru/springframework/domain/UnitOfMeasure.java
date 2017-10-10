@@ -1,7 +1,10 @@
 package guru.springframework.domain;
 
+import lombok.*;
+
 import javax.persistence.*;
 
+@Data
 @Entity
 public class UnitOfMeasure {
 
@@ -12,19 +15,5 @@ public class UnitOfMeasure {
 
     // we don't need one to one back to the ingredient as this is a unidirectional relationship.
 
-    public Long getId() {
-        return id;
-    }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
 }
