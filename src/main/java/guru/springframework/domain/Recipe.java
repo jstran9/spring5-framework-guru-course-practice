@@ -32,7 +32,7 @@ public class Recipe {
     private Difficulty difficulty;
 
     @OneToOne(cascade = CascadeType.ALL)
-    // if we delete a recipe then we want to delete the note.
+    // if we delete a recipe then we want to delete the note (so we need a cascade).
     private Notes notes;
 
     // mappedBy is the target property on the ingredient class.
